@@ -8,13 +8,14 @@ Ref:
 After download and install vagrant, run these commands below:
 
 Based on this link, we can discovery vagrant boxes: https://app.vagrantup.com/boxes/search
->PS D:\> vagrant box add centos/7  *** download centos 7 in your local ***
+>PS D:\> vagrant box add centos/7  # download centos 7 in your local
 >
->PS D:\> vagrant box add ubuntu/xenial64  *** download ubuntu in your local ***
+>PS D:\> vagrant box add ubuntu/xenial64  # download ubuntu in your local
 >
->PS D:\> vagrant box update *** update new version of boxes ***
+>PS D:\> vagrant box update # update new version of boxes
 >
->PS D:\> vagrant box list *** list all boxes that existed in your local ***
+>PS D:\> vagrant box list # list all boxes that existed in your local
 >
+
 
 
