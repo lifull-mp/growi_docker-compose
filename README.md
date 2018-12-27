@@ -1,8 +1,12 @@
 # Vagrant - Docker and Docker Compose - Growi
 
 Ref: 
-  https://github.com/weseek/growi-docker-compose 
-  https://github.com/weseek/growi
+  > https://github.com/weseek/growi-docker-compose
+  >
+  > https://github.com/weseek/growi
+  >
+  > https://github.com/NaturalHistoryMuseum/scratchpads2/wiki/Install-Docker-and-Docker-Compose-(Centos-7)
+  >
 
 ## Install vagrant in windows:
 
@@ -90,4 +94,48 @@ There are Docker EE (Enterprise Edition), Docker CE (Community Edition) versions
 > $ sudo yum upgrade python*
 
 * To verify a successful Docker Compose installation, run:
-> $ docker-compose version
+> $ sudo docker-compose version
+
+## Install growi by using docker-compose:
+
+* To download sources
+> $ git clone https://github.com/weseek/growi-docker-compose.git growi
+>
+> $ cd growi
+>
+
+* Edit configuration:
+To allow access from others:
+> services:
+>
+>  app:
+>
+>    ports:
+>    
+>      - 3000:3000
+>
+
+Enhance heap size for Elasticsearch if necessary
+>environment:
+>
+>  - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
+>  
+
+* Start growi
+> $ sudo docker-compose up
+
+* Checking:
+```
+[vagrant@centos7 growi]$ docker images -a
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+growi_app           latest              d15224166faa        3 hours ago         257MB
+<none>              <none>              2a85b2fab9cd        3 hours ago         257MB
+<none>              <none>              422a7a5a0964        3 hours ago         249MB
+<none>              <none>              b1fad645638f        3 hours ago         249MB
+weseek/growi        3                   68eba4a345e1        5 days ago          249MB
+mongo               3.4                 9467ec7b04e5        5 weeks ago         361MB
+docker/compose      1.23.1              6c16becf4900        7 weeks ago         63.5MB
+hello-world         latest              4ab4c602aa5e        3 months ago        1.84kB
+elasticsearch       5.3-alpine          c818119f17a4        20 months ago       123MB
+[vagrant@centos7 growi]$ 
+```
