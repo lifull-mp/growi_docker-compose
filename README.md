@@ -164,3 +164,5 @@ a8239aa3a022        mongo:3.4                  "docker-entrypoint.sâ€¦"   3 
 969a9c2eb609        hello-world                "/hello"                 3 hours ago         Exited (0) 3 hours ago                            agitated_mendeleev
 [vagrant@centos7 growi]$ 
 ```
+
+![alt](http://https://github.com/minhphuoc275/growi_docker-compose/blob/master/result_growi.png)
