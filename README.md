@@ -7,9 +7,14 @@ Ref:
 ## Install vagrant in windows:
 After download and install vagrant, run these commands below:
 
->PS D:\> vagrant box add centos/7
+Based on this link, we can discovery vagrant boxes: https://app.vagrantup.com/boxes/search
+>PS D:\> vagrant box add centos/7  *** download centos 7 in your local ***
 >
->PS D:\> vagrant box add ubuntu/xenial64
+>PS D:\> vagrant box add ubuntu/xenial64  *** download ubuntu in your local ***
 >
->PS D:\> vagrant box update
->PS D:\> vagrant box list
+>PS D:\> vagrant box update *** update new version of boxes ***
+>
+>PS D:\> vagrant box list *** list all boxes that existed in your local ***
+>
+
+
