@@ -49,8 +49,12 @@ Note:
 > vagrant up
 >
 > vagrant ssh
->
 
+In case, facing problem "mount: unknown filesystem type 'vboxsf'"
+> vagrant plugin install vagrant-vbguest
+>
+> vagrant destroy && vagrant up
+>
 PS: we also can use ssh by adding public key (NAT port --> to access from outside)
 
 ## Install docker and docker-compose
