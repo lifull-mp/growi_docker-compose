@@ -31,9 +31,25 @@ Based on this link, we can discovery vagrant boxes: https://app.vagrantup.com/bo
 >
 >  config.vm.provider "virtualbox" do |vb|
 >
-> 	vb.gui = false
+>     vb.gui = false
 >
 > 	  vb.memory = "2048"
 >
 >  end
+
+Note:
+  public_network --> bridge the network of centos with your network card that will be easier to use from outsite
+  
+* Start vagrant
+
+> vagrant up
+>
+> vagrant ssh
+>
+
+PS: we also can use ssh by adding public key (NAT port --> to access from outside)
+
+
+  
+  
 
