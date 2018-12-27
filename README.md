@@ -59,7 +59,11 @@ In case, facing problem "mount: unknown filesystem type 'vboxsf'"
 > vagrant destroy && vagrant up
 >
 PS: we also can use ssh by adding public key (NAT port --> to access from outside)
-
+```
+[vagrant@localhost ~]$ cat /etc/hostname
+centos7
+#localhost.localdomain
+```
 ## Install docker and docker-compose
 
 Docker allow to create container from Dockerfile
