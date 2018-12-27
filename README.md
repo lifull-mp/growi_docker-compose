@@ -121,7 +121,7 @@ Enhance heap size for Elasticsearch if necessary
 >  - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
 >  
 
-* Start growi
+* Start growi, can add -d if run in background mode
 > $ sudo docker-compose up
 
 * Checking:
