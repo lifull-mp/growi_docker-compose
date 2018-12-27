@@ -111,7 +111,7 @@ There are Docker EE (Enterprise Edition), Docker CE (Community Edition) versions
 ## Install growi by using docker-compose:
 
 * To download sources
-> yum install -y git
+> sudo yum install -y git
 >
 > $ git clone https://github.com/weseek/growi-docker-compose.git growi
 >
