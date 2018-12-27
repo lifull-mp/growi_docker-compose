@@ -171,12 +171,22 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
         inet6 fe80::5054:ff:fe84:81d5  prefixlen 64  scopeid 0x20<link>
         ether 52:54:00:84:81:d5  txqueuelen 1000  (Ethernet)
-        RX packets 360343  bytes 332525545 (317.1 MiB)
+        RX packets 360391  bytes 332529600 (317.1 MiB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 121709  bytes 7764602 (7.4 MiB)
+        TX packets 121735  bytes 7768353 (7.4 MiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
-[vagrant@centos7 growi]$ 
+[vagrant@centos7 growi]$ ifconfig eth1
+eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.126  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::a00:27ff:fed5:811f  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:d5:81:1f  txqueuelen 1000  (Ethernet)
+        RX packets 1596  bytes 111474 (108.8 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2173  bytes 4567164 (4.3 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[vagrant@centos7 growi]$  
 ```
 
 ![alt](https://github.com/minhphuoc275/growi_docker-compose/blob/master/result_growi.png)
