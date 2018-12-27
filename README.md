@@ -31,7 +31,7 @@ Based on this link, we can discovery vagrant boxes: https://app.vagrantup.com/bo
 >
 >  config.vm.network :forwarded_port, id: "ssh", guest: 22, host: 2223
 >
->  config.vm.synced_folder "E:\docker\growi_docker-compose", "/home/vagrant/", nfs: true, owner: "vagrant", group: "vagrant"
+>  config.vm.synced_folder "E:/git", "/home/vagrant/", nfs: true, owner: "vagrant", group: "vagrant"
 >
 >  config.vm.provider "virtualbox" do |vb|
 >
@@ -49,6 +49,9 @@ Note:
 > vagrant up
 >
 > vagrant ssh
+>
+> sudo yum install net-tools
+>
 
 In case, facing problem "mount: unknown filesystem type 'vboxsf'"
 > vagrant plugin install vagrant-vbguest
