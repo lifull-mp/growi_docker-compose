@@ -49,7 +49,45 @@ Note:
 
 PS: we also can use ssh by adding public key (NAT port --> to access from outside)
 
+## Install docker and docker-compose
 
-  
-  
+Docker allow to create container from Dockerfile
+Docker allow to create many containers from docker-compose.yml
 
+### Step 1 — Install Docker
+
+* Install needed packages:
+> $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+  
+* Configure the docker-ce repo (the repo may change --> need to check on docker's website)
+> $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+* Install docker-ce:
+> $ sudo yum install docker-ce
+There are Docker EE (Enterprise Edition), Docker CE (Community Edition) versions.
+
+* Add your user to the docker group with the following command.
+> $ sudo usermod -aG docker $(whoami)
+
+* Set Docker to start automatically at boot time:
+> $ sudo systemctl enable docker.service
+
+* Finally, start the Docker service:
+> $ sudo systemctl start docker.service
+
+ ### Step 2 — Install Docker Compose
+ 
+ * Install Extra Packages for Enterprise Linux
+> $ sudo yum install epel-release
+
+* Install python-pip
+> $ sudo yum install -y python-pip
+
+* Then install Docker Compose:
+> $ sudo pip install docker-compose
+
+* You will also need to upgrade your Python packages on CentOS 7 to get docker-compose to run successfully:
+> $ sudo yum upgrade python*
+
+* To verify a successful Docker Compose installation, run:
+> $ docker-compose version
