@@ -140,6 +140,7 @@ elasticsearch       5.3-alpine          c818119f17a4        20 months ago       
 [vagrant@centos7 growi]$ 
 ```
 
+Docker-compose created 3 images: growi_app, mongo:3.4, elasticsearch:5.3-alpine
 ```
 [vagrant@centos7 growi]$ docker ps -a
 CONTAINER ID        IMAGE                      COMMAND                  CREATED             STATUS                   PORTS                    NAMES
