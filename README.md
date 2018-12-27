@@ -73,12 +73,13 @@ Docker allow to create many containers from docker-compose.yml
 
 * Install needed packages:
 > $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
-  
+>
 * Configure the docker-ce repo (the repo may change --> need to check on docker's website)
 > $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-
+>
 * Install docker-ce:
 > $ sudo yum install docker-ce
+>
 There are Docker EE (Enterprise Edition), Docker CE (Community Edition) versions.
 
 * Add your user to the docker group with the following command.
