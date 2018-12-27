@@ -165,5 +165,18 @@ a8239aa3a022        mongo:3.4                  "docker-entrypoint.sâ€¦"   3 
 [vagrant@centos7 growi]$ 
 ```
 
+```
+[vagrant@centos7 growi]$ ifconfig eth0
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::5054:ff:fe84:81d5  prefixlen 64  scopeid 0x20<link>
+        ether 52:54:00:84:81:d5  txqueuelen 1000  (Ethernet)
+        RX packets 360343  bytes 332525545 (317.1 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 121709  bytes 7764602 (7.4 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[vagrant@centos7 growi]$ 
+```
+
 ![alt](https://github.com/minhphuoc275/growi_docker-compose/blob/master/result_growi.png)
-![alt](https://i1374.photobucket.com/albums/ag404/minhphuoc275/result_growi_zpsinq4kpqw.png)
