@@ -139,3 +139,13 @@ hello-world         latest              4ab4c602aa5e        3 months ago        
 elasticsearch       5.3-alpine          c818119f17a4        20 months ago       123MB
 [vagrant@centos7 growi]$ 
 ```
+
+```
+[vagrant@centos7 growi]$ docker ps -a
+CONTAINER ID        IMAGE                      COMMAND                  CREATED             STATUS                   PORTS                    NAMES
+fed087e8330e        growi_app                  "/docker-entrypoint.â€¦"   2 hours ago         Up 2 hours               0.0.0.0:3000->3000/tcp   growi_app_1
+a8239aa3a022        mongo:3.4                  "docker-entrypoint.sâ€¦"   3 hours ago         Up 2 hours               27017/tcp                growi_mongo_1
+26a7473542cf        elasticsearch:5.3-alpine   "/docker-entrypoint.â€¦"   3 hours ago         Up 2 hours               9200/tcp, 9300/tcp       growi_elasticsearch_1
+969a9c2eb609        hello-world                "/hello"                 3 hours ago         Exited (0) 3 hours ago                            agitated_mendeleev
+[vagrant@centos7 growi]$ 
+```
