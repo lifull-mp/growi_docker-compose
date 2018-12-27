@@ -166,5 +166,5 @@ a8239aa3a022        mongo:3.4                  "docker-entrypoint.sâ€¦"   3 
 ```
 
 ![alt](http://https://github.com/minhphuoc275/growi_docker-compose/blob/master/result_growi.png)
-![alt](http://http://mikemclin.net/mmwp/wp-content/uploads/2013/03/markdown-syntax-language.png)
+![alt](http://mikemclin.net/mmwp/wp-content/uploads/2013/03/markdown-syntax-language.png)
 ![alt](http://https://i1374.photobucket.com/albums/ag404/minhphuoc275/result_growi_zpsinq4kpqw.png)
